@@ -8,62 +8,51 @@
    <link rel="stylesheet" href="/bootstrap.css/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="bootstrap.css/style.css">
-  <title>فروشگاه آنلاین</title>
+  <title>Slider</title>
 </head>
 
-<body dir="rtl">
+<body class="vh-100">
 
-   <div class="container py-5">
-    <div class="row g-4">
-
-      <!-- کارت ۱ با offset -->
-      <div class="col-md-4 offset-md-1">
-        <div class="bg-primary text-white p-4 rounded shadow text-center">
-          <h5>کارت ۱</h5>
-          <p class="mb-0">با offset-md-1</p>
+  <section class="w-75 m-auto h-75">
+    <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="300">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item h-100 active">
+          <img src="/images/00 (1).jpeg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="/images/00 (2).jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="/images/00 (3).jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="/images/00 (4).jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
         </div>
       </div>
-
-      <!-- کارت ۲ که ۷ ستون گرفته -->
-      <div class="col-md-7">
-        <div class="bg-success text-white p-4 rounded shadow text-center">
-          <h5>کارت ۲</h5>
-          <p class="mb-0">col-md-7</p>
-        </div>
-      </div>
-
-      <!-- کارت‌های ۳ و ۴ کنار هم -->
-      <div class="col-md-6">
-        <div class="bg-info text-white p-4 rounded shadow text-center">
-          <h5>کارت ۳</h5>
-          <p class="mb-0">col-md-6</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="bg-danger text-white p-4 rounded shadow text-center">
-          <h5>کارت ۴</h5>
-          <p class="mb-0">col-md-6</p>
-        </div>
-      </div>
-
-      <!-- کارت ۵ با ترتیب دوم -->
-      <div class="col-md-4 order-md-2">
-        <div class="bg-warning text-dark p-4 rounded shadow text-center">
-          <h5>کارت ۵</h5>
-          <p class="mb-0">order-md-2</p>
-        </div>
-      </div>
-
-      <!-- کارت ۶ با ترتیب اول -->
-      <div class="col-md-8 order-md-1">
-        <div class="bg-dark text-white p-4 rounded shadow text-center">
-          <h5>کارت ۶</h5>
-          <p class="mb-0">order-md-1</p>
-        </div>
-      </div>
-
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </div>
+
+  </section>
+
 
   <script src="/bootstrap.js/js/bootstrap.bundle.min.js"></script>
 
